@@ -1,4 +1,16 @@
 // export type Language = 'English' | 'Frenc
+export type MovieCast = {
+  movieId: number;
+  actorName: string;
+  roleName: string;
+  roleDescription: string;
+};
+// Used to validate the query string of HTTP Get requests
+export type MovieCastMemberQueryParams = {
+  movieId: string;
+  actorName?: string;
+  roleName?: string
+}
 
 export type Movie =   {
   id: number,
